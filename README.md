@@ -5,6 +5,14 @@ humidity from a DHT22, publishes the readings to a local MQTT broker over
 TLS, shows live status on a small OLED display, and can self-update its
 firmware over HTTP when notified over MQTT.
 
+[![CI](https://github.com/awijesundara/MQTT_SSL_for_ESP8266/actions/workflows/ci.yml/badge.svg)](https://github.com/awijesundara/MQTT_SSL_for_ESP8266/actions/workflows/ci.yml)
+[![Last commit](https://img.shields.io/github/last-commit/awijesundara/MQTT_SSL_for_ESP8266/master)](https://github.com/awijesundara/MQTT_SSL_for_ESP8266/commits/master)
+[![Top language](https://img.shields.io/github/languages/top/awijesundara/MQTT_SSL_for_ESP8266)](https://github.com/awijesundara/MQTT_SSL_for_ESP8266)
+[![Code size](https://img.shields.io/github/languages/code-size/awijesundara/MQTT_SSL_for_ESP8266)](https://github.com/awijesundara/MQTT_SSL_for_ESP8266)
+[![ESP8266](https://img.shields.io/badge/ESP8266-D1%20mini-E7352C?logo=espressif&logoColor=white)](platformio.ini)
+[![PlatformIO](https://img.shields.io/badge/PlatformIO-Arduino-F5822A?logo=platformio&logoColor=white)](platformio.ini)
+[![MQTT](https://img.shields.io/badge/MQTT-TLS-660066?logo=mqtt&logoColor=white)](IOTA_MQTT_SSL.ino)
+
 ## What it does
 
 - Connects to Wi-Fi and syncs the clock over SNTP.
@@ -116,3 +124,14 @@ configured by `fwUrlBase`.
   (`const int FW_VERSION = FIRMWARE VERSION;`) by turning it into a proper
   `#define FW_VERSION_NUMBER` placeholder.
 - No change to MQTT topics, payloads, publish cadence, or TLS/auth behavior.
+
+## Project statistics
+
+| Metric | Value |
+|---|---|
+| Tracked files | 4 |
+| Lines of code (non-blank) | 324 |
+| Languages | C++ (Arduino) 324 |
+| Commits | 4 |
+
+CI compiles the firmware with PlatformIO on each push to `master`.
